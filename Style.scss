@@ -410,7 +410,7 @@ video{
 		padding: 25px 0;
 	}
 	&__sectiongrids {
-		@extend %move_animation;
+		
 		margin-top:20px;
 		width: auto;
 		text-align: center;
@@ -428,6 +428,9 @@ video{
 	&__sectiongrids:hover{
 		box-shadow: none;
 	}
+	&__grid{
+	  @extend %move_animation;
+	}
 }
 
 /**Resume**/
@@ -440,7 +443,7 @@ video{
     text-shadow: 1px 1px 2px black, 0 0 25px #bec2d1, 0 0 5px whitesmoke;
 }
 .timelines {
-	@extend %move_animation;
+	
 	border-left: 2px solid #dadada;
 	padding: 8px 0 8px 48px;
 	color:white;
@@ -487,8 +490,12 @@ video{
 		top: 2px;
 		background: white;
 	  }
+	
 
   }
+  .Resume_Content{
+	@extend %move_animation;
+ }
   
 
   
@@ -540,6 +547,11 @@ video{
 	font-size: 3;
 }
 
+.button-leweb{
+   
+	height: 35px !important;
+	weight: 100px !important
+  }
 
 
 /**map**/
